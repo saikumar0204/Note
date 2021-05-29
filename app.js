@@ -1,28 +1,28 @@
 var chalk= require('chalk')
 var yargs= require('yargs')
-var commands= require('./commands')
+var operations= require('./operations')
 
 // console.log(yargs.argv);
 
-var command= yargs.argv._[0]
+var operation= yargs.argv._[0]
 var title= yargs.argv.title
 var body= yargs.argv.body
 
-if(command==="add"){
+if(operation==="add"){
   if(title&&body){
-    commands.add(title,body)
+    operations.add(title,body)
   }
 }
-else if(command==="remove"){
+else if(operation==="remove"){
   if(title){
-    commands.remove(title)
+    operations.remove(title)
   }
 }
-else if(command==="list"){
-  commands.list()
+else if(operation==="list"){
+  operations.list()
 }
-else if(command==="read"){
+else if(operation==="read"){
   if(title){
-    commands.read(title)
+    operations.read(title)
   }
 }
