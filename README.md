@@ -3,11 +3,15 @@ A command line interface tool to add,update,remove,view notes built using yargs 
 
 basic commands
 
--To add/update
+# to add/update
 node app --title="some text" --body="some body text"
 
--to remove
+# to remove
 node app remove --title="title of text you want to remove"
 
--to print list
+# to print list
 node app list
+
+# to read particular list
+
+node app read --title="title of text you want to read"
