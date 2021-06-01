@@ -1,5 +1,5 @@
 # Note
-A command line interface tool to add,update,remove,view notes built using yargs module. The data is stored in note.json file and can be updated easily via 
+A command line interface tool built using yargs module to add,update,remove,view notes . The data is stored in note.json file and can be updated easily via 
 
 basic commands
 
